@@ -1,0 +1,337 @@
+body{
+    margin-left:15%;
+    margin-right:15%;
+}
+.nav-bar{
+    background-color: grey;
+    width:100%;
+    height:5%;
+    padding-left:20px;
+}
+
+.nav-bar a{
+    float:left;
+    text-decoration: none;
+    color:white;
+    
+
+   width:10%;
+   &:hover{
+    /* color:black; */
+
+    color: black;
+   }
+ 
+}
+.blog-heading2{
+    display:flex;
+    justify-content: space-evenly;
+    width:100%;
+}
+button[type=submit2]{
+    width: 30%;
+    font-size: 18px;
+    background-color: transparent;
+    padding:6px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-right:10px;
+    border: none;
+    cursor: pointer;
+}
+
+.blog-title{
+    width:70%;
+}
+
+/* contact container */
+.sample-header {
+  position: relative;
+  width: 100%;
+  margin-top: 40%;;
+  height: 55vh; 
+  background-image: url("https://wallpapercave.com/wp/wp3157729.jpg");
+  background-position: center;
+  background-size: cover;
+   background-attachment: fixed; 
+   /* opacity:0.9; */
+}
+
+.contact-container{
+    padding:20px;
+   
+     padding-right:0px;
+    /* height:50vh; */
+    /* background-color:dimgray; */
+    display:flex;
+  }
+  .contact-section{
+    width:100%;
+   position: absolute;
+
+    /* padding: 15% 0 10%; */
+  
+    margin: 0 auto;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Montserrat", sans-serif;
+   
+
+  }
+  .contact-box{
+  
+    margin:0 auto;
+    color:white;
+  
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  }
+
+  .subscribe{
+    position:relative;
+  
+    max-width:640px;
+    margin:0 auto;
+ 
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   width:40%;
+  
+  }
+  
+  .contact-img img{
+    width:100%;
+    padding-left:30px;
+  }
+  .subscribe form{
+    width:100%;
+  }
+  input[type=text]{
+    width:100%;
+    height:40px;
+    outline: none;
+    margin-bottom: 20px;
+  
+  }
+  button[type=submit]{
+    padding:10px;
+    font-size:15px;
+    margin-top:15px;
+    width:30%;
+    background-color: white;
+    border:none;
+    font-weight: bold;
+    cursor: pointer;
+  
+    &:hover{
+      color:blue;
+    }
+  }
+  /* broweries
+   */
+   .top-broweries-2{
+    margin-top: 120px;
+   }
+   .top-broweries{
+    position:inline-block;
+   }
+   .broweries-container{
+    float:left;
+    display:flex;
+  
+   }
+   .broweries-box{
+    padding-right:10px;
+  
+   }
+   .broweries-box a{
+    text-decoration: none;
+    color:black;
+   }
+   .broweries-heading h4{
+    font-size: 20px;
+    color:#333;
+    font-weight: bold;
+   }
+   .broweries-box h4{
+    font-size: 20px;
+  
+   }
+   .browery-img {
+    width: 100%;
+    height: 300px; 
+    overflow: hidden;
+    /* position: relative;  */
+  }
+  
+  .browery-img img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .browery-img img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .contact-section{
+   margin-top: 30px;
+  }
+/* blog box */
+.blog-heading {
+    font-size: 20px;
+    color: #333;
+    width:100%;
+    font-weight: bold;
+  }
+  .blog{
+    width:100%;
+  }
+  .blog-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+  }
+  
+  .blog-box {
+    display: flex;
+    /* justify-content: space-evenly; */
+    text-align: left;
+    width: 100%;
+    padding-bottom:10px;
+    
+    border-bottom: 1px solid grey;
+  
+  }
+  
+  .blog-content a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  
+  }
+  
+  .blog-content {
+    width: 65%;
+    padding-left: 15px;
+  }
+  
+  .blog-img {
+    width:35%;
+  }
+  
+  .blog-img img {
+    width: 100%;
+  }
+  .blog-content p{
+    font-size: 20px;
+  }
+  .blog-content h2 {
+    font-size: 35px;
+  }
+  
+  .blog-content h4 {
+    font-size: 20px;
+  }
+  
+  .blogs {
+    display: flex;
+    align-items: center;
+  }
+  
+  .side-bar {
+  
+    width: 100%;
+    height: 100%;
+    padding-left: 60px;
+  
+  }
+  
+  /* side links */
+  .side-bar-img img {
+    width: 100%;
+  
+  }
+  
+  .side-links h3 {
+    font-size: 29px;
+    text-align: center;
+  }
+  
+  .side-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+  }
+  
+  .side-links p {
+    padding: 10px;
+  
+    &:hover {
+      background-color: grey;
+    }
+  }
+  .recipe-box {
+    padding-right: 20px;
+  
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  
+  .recipe-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+  }
+  .recipe-img{
+    width: 100%;
+    overflow: hidden;
+  }
+  .recipe-img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  .recipe-img img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  .recipe-text {
+    position: relative;
+    background-color: yellow;
+    float: right;
+    right: 80px;
+    text-align: center;
+    width: 40%;
+    top: -35;
+    z-index: 1;
+    /* padding-right: 0px;
+      padding-left: 0px; */
+    /* padding-top:1px;
+      padding-bottom: 1px; */
+  
+  }
+  
+  .heading-text {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .heading-text span {
+    --tw-text-opacity: 1;
+    color: rgb(115 64 96/var(--tw-text-opacity));
+    font-family: Drama Regular;
+    font-size: 3rem;
+    letter-spacing: 0;
+    margin-top: .25rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    /* font-family: Arvo,Georgia,Cambria,Times New Roman,Times,serif; */
+  }
+  

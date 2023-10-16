@@ -1,0 +1,164 @@
+<html>
+
+<head>
+    <title>dropdown</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Home</a>
+        <a href="#">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <div class="header">
+                    <h2>Mega Menu</h2>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <a href="#">Column-1</a>
+                        <a href="#">Column-2</a>
+                        <a href="#">Column-3</a>
+                    </div>
+                    <div class="column">
+                        <a href="#">Column-1</a>
+                        <a href="#">Column-2</a>
+                        <a href="#">Column-3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="select">
+        <select id="options">
+            <option value="oldest">oldest</option>
+            <option value="newest">Newest</option>
+        </select>
+        <div class="tick-mark"></div>
+    </div>
+    <style>
+        .navbar {
+            /* display:flex;
+                align-items: center;
+                justify-content: space-evenly; */
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+        }
+
+        /* Style the select element to hide the default dropdown arrow */
+        .select {
+    position: relative;
+    margin-left:50px;
+}
+
+.tick-mark {
+    position: absolute;
+    right: -25px;
+    top: 5px;
+    display: none;
+    color: green;
+}
+
+
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            outline: none;
+            color: white;
+            background-color: inherit;
+            border: none;
+            font-size: 16px;
+            margin: 0;
+            font: inherit;
+            padding: 14px 16px;
+        }
+
+        .navbar a,
+        .dropdown:hover .dropbtn {
+            background-color: #333;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            left: 0;
+            text-shadow: 0px 8px 16px 0px;
+            z-index: 1;
+
+        }
+
+        .dropdown-content .header {
+            background-color: #333;
+            color: white;
+            padding: 16px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            background-color: #333;
+            text-align: left;
+            height: 250px;
+        }
+
+        .column a {
+            float: none;
+            color: white;
+            padding: 16px;
+            display: block;
+            text-align: left;
+
+        }
+
+        .column a:hover {
+            color: black;
+            background-color: #ddd;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+    <script>
+       const select = document.getElementById('options');
+const tickMark = document.querySelector('.tick-mark');
+
+select.addEventListener('change', function () {
+    if (this.value === 'oldest' || this.value === 'newest') {
+        tickMark.style.display = 'inline';
+    } else {
+        tickMark.style.display = 'none';
+    }
+});
+
+    </script>
+</body>
+
+</html>

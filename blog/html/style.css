@@ -1,0 +1,613 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit;
+  margin: 0;
+
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #333;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .header {
+  background: #333;
+  padding: 16px;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+
+  display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  background-color: #333;
+  height: 250px;
+}
+
+.column a {
+  float: none;
+
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* recipe container */
+/* .recipe-section{
+    margin-left:15%;
+    margin-right: 15%;
+  } */
+.recipe-box {
+  padding-right: 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.recipe-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.recipe-img{
+  width: 100%;
+  overflow: hidden;
+}
+.recipe-img img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+.recipe-img img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.recipe-text {
+  position: relative;
+  background-color: yellow;
+  float: right;
+  right: 80px;
+  text-align: center;
+  width: 40%;
+  top: -35;
+  z-index: 1;
+  /* padding-right: 0px;
+    padding-left: 0px; */
+  /* padding-top:1px;
+    padding-bottom: 1px; */
+
+}
+
+.heading-text {
+  text-align: center;
+  padding: 40px;
+}
+
+.heading-text span {
+  --tw-text-opacity: 1;
+  color: rgb(115 64 96/var(--tw-text-opacity));
+  font-family: Drama Regular;
+  font-size: 3rem;
+  letter-spacing: 0;
+  margin-top: .25rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  /* font-family: Arvo,Georgia,Cambria,Times New Roman,Times,serif; */
+}
+
+/* categories */
+.categories {
+  display: flex;
+  align-items: left;
+  justify-content: space-evenly;
+}
+
+.category-box {
+  width: 100%;
+  padding-right: 20px;
+}
+
+.category-img img {
+  width: 100%;
+  border-radius: 50%;
+  ;
+
+}
+
+.category-box h4 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* search bar */
+.search-bar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #686A6C;
+  padding: 30px;
+  padding-top: 40px;
+
+}
+
+.search {
+  position: relative;
+  width: 600px;
+  height: 60px;
+  background-color: white;
+  overflow: hidden;
+  /* margin-left:35%; */
+  border-radius: 0px;
+  transition: 0.5s;
+  box-shadow: 0 0 0 2px black;
+}
+
+.search-bar p {
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  font-family: 'Cedarville Cursive';
+}
+
+.search .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.search .icon::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #287dfc;
+  border-radius: 50%;
+
+  transform: translate(-4px, -4px);
+}
+
+.search .icon::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  background: #287dfc;
+  transform: translate(6px, 6px) rotate(315deg);
+}
+
+.search.active {
+  width: 360px;
+}
+
+.search .input {
+  position: relative;
+  width: 300px;
+  height: 60px;
+  left: 60px;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.search .input input {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 10px 0;
+  outline: none;
+  font-size: 18px;
+}
+
+.clear {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  right: 15px;
+  /* background-color: #ff0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.clear::before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 18px;
+  background: black;
+  transform: rotate(45deg);
+
+}
+
+.clear::after {
+  position: absolute;
+  content: '';
+
+  width: 1px;
+  height: 18px;
+  background: black;
+  transform: rotate(315deg);
+
+}
+
+.view-more {
+  width: 100%;
+  padding: 21px;
+  font-size: 15px;
+  font-weight: 100;
+  background-color: #333;
+  color: white;
+  border: none;
+}
+
+/* brans logos */
+.brand-heading {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  text-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.brand-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.brand-logos img:hover {
+  color: grey;
+
+}
+
+/* blog box */
+.blog-heading {
+  font-size: 20px;
+  color: #333;
+  width:100%;
+  font-weight: bold;
+}
+.blog{
+  width:100%;
+}
+.blog-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.blog-box {
+  display: flex;
+  /* justify-content: space-evenly; */
+  text-align: left;
+  width: 100%;
+  padding-bottom:10px;
+  
+  border-bottom: 1px solid grey;
+
+}
+
+.blog-content a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+
+}
+
+.blog-content {
+  width: 70%;
+  padding-left: 15px;
+}
+
+.blog-img {
+  width:35%;
+}
+
+.blog-img img {
+  width: 100%;
+}
+.blog-content p{
+  font-size: 20px;
+}
+.blog-content h2 {
+  font-size: 35px;
+}
+
+.blog-content h4 {
+  font-size: 20px;
+}
+
+.blogs {
+  display: flex;
+}
+
+.side-bar {
+
+  width: 100%;
+  height: 100%;
+
+}
+
+/* side links */
+.side-bar-img img {
+  width: 100%;
+
+}
+
+.side-links h3 {
+  font-size: 29px;
+  text-align: center;
+}
+
+.side-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 0px;
+}
+
+.side-links p {
+  padding: 10px;
+
+  &:hover {
+    background-color: grey;
+  }
+}
+/* testimonial */
+.testimonial-container{
+display:flex;
+margin-top: 15px;
+/* align-items: center; */
+justify-content: space-around;
+padding:30px;
+padding-left: 0;
+background-color:#f2f2f2;
+padding-right: 0;
+/* background: url("https://thumbs.dreamstime.com/z/baking-background-bake-ingredients-banner-website-pastel-top-view-flat-lay-copy-space-preparation-kitchen-table-ware-109766956.jpg?w=992")no-repeat center center/cover; */
+}
+.testimonial-content{
+  text-align:center;
+ 
+  width:40%;
+}
+.testimonial-content h3{
+  font-size: 23px;
+  line-height: 80px;
+}
+.testimonial-content p{
+line-height: 40px;
+font-size: 20px;
+  text-align: center;
+}
+.testimonial-content button{
+/* width:50%; */
+padding:15px;
+background-color:#686A6C;
+border:none;
+color:white;
+margin-top: 20px;
+font-size: 18px;
+}
+.testimonial-image img{
+  width:100%;
+  padding-right:15px;
+}
+
+/* contact container */
+.contact-container{
+  /* background-color: green; */
+ 
+  padding:20px;
+  padding-top: 40px;
+  padding-right:0px;
+  height:50vh;
+  display:flex;
+}
+.contact-section{
+  background-color:#686A6C;
+}
+.contact-box{
+  position:relative;
+  /* padding:15% 0 10%; */
+  /* max-width:640px; */
+  margin:0 auto;
+  color:white;  /*here we are adding text shadow */
+
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ /* width:50%; */
+text-align: center;
+}
+
+/* .facebook,
+.twitter,
+.youtube{
+  padding-bottom: 30px;
+}
+.facebook i,
+.twitter i,
+.youtube i{
+  font-size: 35px;
+  color:black;
+}
+.facebook a,
+.twitter a,
+.youtube a{
+text-decoration: none;
+color: black;
+} */
+.subscribe{
+  position:relative;
+  /* padding:15% 0 10%; */
+  max-width:640px;
+  margin:0 auto;
+ /*here we are adding text shadow */
+  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ width:40%;
+
+}
+
+.contact-img img{
+  width:100%;
+  padding-left:30px;
+}
+.subscribe form{
+  width:100%;
+}
+input[type=text]{
+  width:100%;
+  height:40px;
+  outline: none;
+  margin-bottom: 20px;
+
+}
+button[type=submit]{
+  padding:10px;
+  font-size:15px;
+  width:100%;
+  background-color: white;
+  border:none;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover{
+    color:blue;
+  }
+}
+/* broweries
+ */
+ .broweries-container{
+  float:left;
+  display:flex;
+
+ }
+ .broweries-box{
+  padding-right:10px;
+
+ }
+ .broweries-box a{
+  text-decoration: none;
+  color:black;
+ }
+ .broweries-heading h4{
+  font-size: 20px;
+  color:#333;
+  font-weight: bold;
+ }
+ .broweries-box h4{
+  font-size: 20px;
+
+ }
+ .browery-img {
+  width: 100%;
+  height: 300px; 
+  overflow: hidden;
+  position: relative; 
+}
+
+.browery-img img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.browery-img img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.contact-section{
+ margin-top: 30px;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}

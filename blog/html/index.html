@@ -1,0 +1,373 @@
+<html>
+
+<head>
+  <title>Dropdown header links</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+     <div class="dropdown">
+      <button class="dropbtn">Dropdown
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <div class="header">
+          <h2>Mega Menu</h2>
+        </div>
+        <div class="row">
+          <div class="column">
+            <h3>Category 1</h3>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <div class="column">
+            <h3>Category 2</h3>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+          <div class="column">
+            <h3>Category 3</h3>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="heading">
+    <div class="heading-text">
+      <h2>SIMPLE RECIPES MADE FOR <br><span>real, actual, everyday life.</span></h2>
+    </div>
+  </section>
+<section class="recipe-section">
+  <div class="recipe-container">
+    <div class="recipe-box">
+      <div class="recipe-img">
+        <img src="./img/Tofu-Lettuce-Wraps.jpg">
+      </div>
+      <div class="recipe-text">
+        <h4>Most Popular</h4>
+      </div>
+    </div>
+    <div class="recipe-box">
+      <div class="recipe-img">
+        <img src="./img/Gochujang-Noodles-3.jpg">
+      </div>
+      <div class="recipe-text">
+        <h4>Most Popular</h4>
+      </div>
+    </div>
+    <div class="recipe-box">
+      <div class="recipe-img">
+        <img src="./img/Coconut-Curry-Chickpeas-61.jpg">
+      </div>
+      <div class="recipe-text">
+        <h4>Most Popular</h4>
+      </div>
+    </div>
+    <div class="recipe-box" style="padding-right: 0px;">
+      <div class="recipe-img">
+        <img src="./img/The-Best-Tortellini-Soup-1-2.jpg">
+      </div>
+      <div class="recipe-text">
+        <h4>Most Popular</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="category">
+  <div class="categories">
+    <div class="category-box">
+      <div class="category-img">
+        <img src="./img/category/Avocodo-Kale-Caesar-Salad-183x183.jpg">
+      </div>
+      <h4>Quick AND Easy</h4>
+    </div>
+    <div class="category-box">
+      <div class="category-img">
+        <img src="./img/category/Instant-Pot-Chicken-and-Dumplings-1-2-96x96.jpg">
+      </div>
+      <h4>Soups</h4>
+    </div>
+    <div class="category-box">
+      <div class="category-img">
+        <img src="./img/category/Meal-Prep-Pasta-with-Cauliflower-96x96.jpg">
+      </div>
+      <h4>Salad</h4>
+    </div>
+    <div class="category-box">
+      <div class="category-img">
+        <img src="./img/category/Roasted-Veggie-Bowl-with-Egg-1-96x96.jpg">
+      </div>
+      <h4>meal prep</h4>
+    </div>
+    <div class="category-box">
+      <div class="category-img">
+        <img src="./img/category/The-Best-Tortellini-Soup-1-2-183x183.webp">
+      </div>
+      <h4>Vegan</h4>
+    </div>
+    <div class="category-box">
+      <div class="category-img">
+        <img src="./img/category/Vegetarian-Enchiladas-on-Plate-96x96.jpg">
+      </div>
+      <h4>Instant Pot</h4>
+    </div>
+    <div class="category-box">
+      <div class="category-img">
+        <img src="./img/Tofu-Lettuce-Wraps.jpg" style="width:100%;height:46%">
+      </div>
+      <h4>healthy</h4>
+    </div>
+
+    <div class="category-box">
+      <div class="category-img">
+        <img src="./img/category/Spicy-Shrimp-with-Cauli-Mash-and-Kale-96x96.jpg">
+      </div>
+      <h4>Dinner</h4>
+    </div>
+    <div class="category-box">
+      <div class="category-img">
+        <img src="./img/category/Roasted-Veggie-Bowl-with-Egg-1-96x96.jpg">
+      </div>
+      <h4>vegetraian</h4>
+    </div>
+    <div class="category-box">
+      <div class="category-img">
+        <img src="./img/Coconut-Curry-Chickpeas-61.jpg" style="width:100%;height:46%">
+      </div>
+      <h4>Quick AND Easy</h4>
+    </div>
+  </div>
+</section>
+<section class="search-bar">
+<div class="search">
+  <div class="icon">
+
+  </div>
+  <div class="input">
+  <input type="text" placeholder="search" id="mysearch">
+  </div>
+  <span class="clear" onclick="document.getElementById('mysearch').value =''"></span>
+</div>
+<p> OR</p>
+<div class="view-btn">
+  <button class="view-more">View More Recipes</button>
+</div>
+</section>
+<section class="brand">
+<div class="brand-heading">
+  <p>As Seen In</p>
+</div>
+<div class="brand-logos">
+  <img src="./img/brand/client-1.png">
+  <img src="./img/brand/client-2.png">
+  <img src="./img/brand/client-4.png">
+  <img src="./img/brand/client-5.png">
+  <img src="./img/brand/client-6.png">
+  <img src="./img/brand/envato.png">
+</div>
+</section>
+<section class="blogs">
+  <div class="blog">
+  <div class="blog-heading">
+    <p>The Latest & Greatest</p>
+  </div>
+  <div class="blog-container">
+    <div class="blog-box">
+      <div class="blog-img">
+        <img src="./img/blog/Chimichurri-Shrimp-4.jpg">
+      </div>
+      <div class="blog-content">
+        <p>Octobar 9, 2023</p>
+       <a href="#"><h2>Swedish Pancakes</h2></a> 
+        <p>My go-to recipe for Swedish pancakes! Buttery, tender, and thick enough to sink your teeth into but with a nice thin, delicate, lacy edge.</p>
+      <a href="#"><h4>Continue Reading</h4></a>
+      </div>
+    </div>
+    <div class="blog-box">
+      <div class="blog-img">
+        <img src="./img/blog/Swedish-Pancackes-1-2.jpg">
+      </div>
+      <div class="blog-content">
+        <p>Octobar 9, 2023</p>
+       <a href="#"><h2>Swedish Pancakes</h2></a> 
+        <p>My go-to recipe for Swedish pancakes! Buttery, tender, and thick enough to sink your teeth into but with a nice thin, delicate, lacy edge.</p>
+      <a href="#"><h4>Continue Reading</h4></a>
+      </div>
+    </div>
+    <div class="blog-box">
+      <div class="blog-img">
+        <img src="./img/blog/Fried-Egg-Tacos-4.jpg">
+      </div>
+      <div class="blog-content">
+        <p>Octobar 9, 2023</p>
+       <a href="#"><h2>Swedish Pancakes</h2></a> 
+        <p>My go-to recipe for Swedish pancakes! Buttery, tender, and thick enough to sink your teeth into but with a nice thin, delicate, lacy edge.</p>
+      <a href="#"><h4>Continue Reading</h4></a>
+      </div>
+    </div>
+ 
+  </div>
+</div>
+<div class="sidebar">
+  <div class="side-bar">
+    <div class="side-bar-img">
+      <img src="./img/blog/sidebar-freezer-meals-350x523.png">
+    </div>
+    <div class="side-links">
+      <h3>Recipes</h3>
+      <a href="#"><p>recipe-1</p></a>
+      <a href="#"><p>recipe-2</p></a>
+      <a href="#"><p>recipe-3</p></a>
+      <a href="#"><p>recipe-4</p></a>
+      <a href="#"><p>recipe-5</p></a>
+      <a href="#"><p>recipe-6</p></a>
+      <a href="#"><p>recipe-7</p></a>
+    
+   
+    </div>
+  </div>
+</div>
+</section>
+<section class="testimonial">
+  <div class="testimonial-container">
+    <div class="testimonial-content">
+      <h3>HI! I'm Lindsay</h3>
+      <p>Lorem ipsum, dolor sit amet <br>consectetur adipisicing elit.<br> Odit inventore mollitia quae <br>est quam. Nostrum voluptatibus <br>corrupti nisi vel eveniet.</p>
+      <button class="learn-more">Learn More</button>
+    </div>
+    <div class="testimonial-image">
+      <img src="./img/blog/home-lindsay-kitchen-380x480.jpg">
+    </div>
+    <div class="testimonial-image">
+      <img src="./img/blog/pinch.jpg">
+    </div>
+  </div>
+</section>
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-img">
+      <img src="../html/img/blog/Chimichurri-Shrimp-4.jpg">
+    </div>
+    <!-- <div class="contact-box">
+      <div class="facebook">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+    <div class="twitter">
+     <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="youtube">
+     <a href="#"><i class="fab fa-youtube"></i></a>
+    </div> 
+    </div> -->
+    <div class="subscribe">
+      <div class="subscribe-heading">
+        <h3>Subscribe To Our Newsletter</h3>
+        <form>
+        Name<input type="text"><br>
+        Phone No<input type="text"><br>
+       Email<input type="text"><br>
+       <button type="submit" class="submit">Submit</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="top-broweries">
+  <div class="broweries-heading">
+    <h4>Top Categories</h4>
+  </div>
+  <div class="broweries-container">
+    <div class="broweries-box">
+      <div class="browery-img">
+       <a href="#"><img src="../html/img/food category/chocolate-cookies.webp"></a> 
+      </div>
+      <div class="browery-content">
+       <a href="#"><h4>Cookies</h4></a>
+      </div>
+    </div>
+    <div class="broweries-box">
+      <div class="browery-img">
+       <a href="#"><img src="../html/img/food category/fresh-fruit-salad-with-mint.webp"></a>
+      </div>
+      <div class="browery-content">
+        <a href="#"><h4>Cookies</h4></a>
+       </div>
+    </div>
+    <div class="broweries-box">
+      <div class="browery-img">
+      <a href="#"><img src="../html/img/food category/bagel-at-home.webp"></a>
+      </div>
+      <div class="browery-content">
+        <a href="#"><h4>Cookies</h4></a>
+       </div>
+    </div>
+    <div class="broweries-box">
+      <div class="browery-img">
+      <a href="#"><img src="../html/img/food category/xiaolongbao-dumplings.webp"></a>
+      </div>
+      <div class="browery-content">
+        <a href="#"><h4>Cookies</h4></a>
+       </div>
+    </div>
+  </div>
+</section>
+<section class="top-broweries">
+  <div class="broweries-heading">
+    <h4>Top Categories</h4>
+  </div>
+  <div class="broweries-container">
+    <div class="broweries-box">
+      <div class="browery-img">
+        <img src="../html/img/food category/chocolate-cookies.webp">
+      </div>
+      <div class="browery-content">
+       <a href="#"><h4>Cookies</h4></a>
+      </div>
+    </div>
+    <div class="broweries-box">
+      <div class="browery-img">
+        <img src="../html/img/food category/fresh-fruit-salad-with-mint.webp">
+      </div>
+      <div class="browery-content">
+        <a href="#"><h4>Cookies</h4></a>
+       </div>
+    </div>
+    <div class="broweries-box">
+      <div class="browery-img">
+        <img src="../html/img/food category/bagel-at-home.webp">
+      </div>
+      <div class="browery-content">
+        <a href="#"><h4>Cookies</h4></a>
+       </div>
+    </div>
+    <div class="broweries-box">
+      <div class="browery-img">
+        <img src="../html/img/food category/xiaolongbao-dumplings.webp">
+      </div>
+      <div class="browery-content">
+        <a href="#"><h4>Cookies</h4></a>
+       </div>
+    </div>
+  </div>
+</section>
+<script>
+  const icon= document.querySelector('.icon');
+  const search= document.querySelector('.search');
+  icon.onclick =function(){
+    search.classList.toggle('active')
+  }
+</script> 
+</body>
+
+</html>
